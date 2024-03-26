@@ -30,9 +30,6 @@ public class EmployeesList {
                 found.add("id:" + employee.getId() + ". " + employee.getName() + ": " + employee.getPhoneNumber());
             }
         }
-        if (found.isEmpty()) {
-            found.add("Сотрудник '" + name + "' не найден");
-        }
         return found;
     }
 

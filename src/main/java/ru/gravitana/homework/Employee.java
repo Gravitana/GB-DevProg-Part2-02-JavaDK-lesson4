@@ -2,7 +2,7 @@ package ru.gravitana.homework;
 
 public class Employee {
     private static int lastId = 0;
-    private int id;
+    private final int id;
     private String name;
     private String phoneNumber;
     private int experience;
