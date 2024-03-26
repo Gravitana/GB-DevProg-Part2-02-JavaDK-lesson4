@@ -16,5 +16,34 @@ public class Main {
         for (Employee employee : employeesList.getAll()) {
             System.out.println(employee);
         }
+
+        System.out.println("---------------------------------------");
+        System.out.println("Поиск по стажу 2 года:");
+        System.out.println();
+        for (Employee employee : employeesList.getByExperience(2)) {
+            System.out.println(employee);
+        }
+
+        System.out.println("---------------------------------------");
+        System.out.println("Поиск имени:");
+        System.out.println();
+        for (String str : employeesList.getPhoneByName("Иван")) {
+            System.out.println(str);
+        }
+        System.out.println();
+        for (String str : employeesList.getPhoneByName("Василий")) {
+            System.out.println(str);
+        }
+        System.out.println();
+        for (String str : employeesList.getPhoneByName("Тамара")) {
+            System.out.println(str);
+        }
+        System.out.println("---------------------------------------");
+        System.out.println("Поиск id:");
+        System.out.println();
+        System.out.println(employeesList.getById(3));
+        System.out.println();
+        System.out.println(employeesList.getById(30));
+
     }
 }

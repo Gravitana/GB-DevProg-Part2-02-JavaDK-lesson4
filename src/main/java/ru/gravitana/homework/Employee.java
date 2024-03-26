@@ -23,12 +23,27 @@ public class Employee {
         this(name, "", 0);
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public int getExperience() {
+        return experience;
+    }
+
     @Override
     public String toString() {
-        return name +
-                ": id='" + id + '\'' +
-                ", phone='" + phoneNumber + '\'' +
-                ", experience='" + experience + '\''
-                ;
+        return "id:" + id + ". "
+                + name + ": "
+                + phoneNumber +
+                ", стаж " + experience;
     }
 }
